@@ -40,9 +40,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
             this.button1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(25, 83);
+            this.button1.Location = new System.Drawing.Point(410, 245);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 62);
+            this.button1.Size = new System.Drawing.Size(136, 62);
             this.button1.TabIndex = 0;
             this.button1.Text = "Diyetisyenleri Görüntüle";
             this.button1.UseVisualStyleBackColor = false;
@@ -51,9 +51,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 151);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 83);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(266, 156);
+            this.dataGridView1.Size = new System.Drawing.Size(521, 156);
             this.dataGridView1.TabIndex = 1;
             // 
             // pictureBox1
@@ -61,7 +61,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(25, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(266, 52);
+            this.pictureBox1.Size = new System.Drawing.Size(521, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 348);
+            this.ClientSize = new System.Drawing.Size(620, 348);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);

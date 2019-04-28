@@ -35,8 +35,66 @@ namespace hediyet
             this.Close();
         }
 
+        private void dnsn_button_Click(object sender, EventArgs e)
+        {
+
+            dbislemleri Uyegirisi = new dbislemleri();
+            Console.WriteLine("db bağlı");
+
+            bool girisislemi = Uyegirisi.Uyekontrol(kadi_textBox.Text, sifre_textBox.Text);
+
+
+            if (girisislemi == true)
+            {
+                Console.WriteLine("girdi");
+                MessageBox.Show("Giriş Başarılı Hoş Geldiniz");
+
+            }
+            else
+            {
+                MessageBox.Show("Bilgileriniz Hatalı Lütfen Tekrar Deneyin");
+            }
+        }
+
+        
+        private void dyt_button_Click(object sender, EventArgs e)
+        {
+
+            dbislemleri Uyegirisi = new dbislemleri();
+            Console.WriteLine("db bağlı");
+           
+            bool girisislemi = Uyegirisi.Uyekontrol(kadi_textBox.Text, sifre_textBox.Text);
+            
+
+            if (girisislemi == true)
+            {
+                Console.WriteLine("girdi");
+                MessageBox.Show("Giriş Başarılı Hoş Geldiniz");
+
+            }
+            else
+            {
+                MessageBox.Show("Bilgileriniz Hatalı Lütfen Tekrar Deneyin");
+            }
+        }
+
+
+        private void kadi_textBox_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void sifre_textBox_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+
         private void label1_Click(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -45,10 +103,7 @@ namespace hediyet
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

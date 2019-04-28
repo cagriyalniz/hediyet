@@ -15,26 +15,31 @@ namespace hediyet
     {
         public dytsynlist()
         {
+          
             InitializeComponent();
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
-            string connetionString;
-            SqlConnection cnn;
-            connetionString = @"Data Source=DESKTOP-I5C70L2\CAGRI;
-            Initial Catalog=hediyet;
-            User ID=admin;
-            Password=admin123456;";
-            cnn = new SqlConnection(connetionString);
-            cnn.Open();
-            SqlCommand komut = new SqlCommand("SELECT * FROM tbl_diyetisyen", cnn);
-            SqlDataReader veriyukle = komut.ExecuteReader();
-            DataTable tablo = new DataTable();
-            tablo.Load(veriyukle);
-            dataGridView1.DataSource = tablo;
-            cnn.Close();
+            //dbislemleri baglanma = new dbislemleri();
+            //baglanma.DbConnect();
+            try
+            {
+                dbislemleri dytsynlisteleme = new dbislemleri();
+                dataGridView1.DataSource = dytsynlisteleme.dytsynList();
+            }
+            catch (Exception hata)
+            {
+
+                //label_Message.Text = hata.Message;
+            }
+
+            
+            
+            
+            
 
         }
 
