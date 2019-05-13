@@ -46,8 +46,15 @@ namespace hediyet
 
             if (girisislemi == true)
             {
-                Console.WriteLine("girdi");
                 MessageBox.Show("Giriş Başarılı Hoş Geldiniz");
+
+                this.Hide();
+                dnsn_first_page f4 = new dnsn_first_page();
+
+                f4.FormClosing += F2_FormClosing;
+                f4.ShowDialog();
+
+                
 
             }
             else
@@ -68,8 +75,14 @@ namespace hediyet
 
             if (girisislemi == true)
             {
-                Console.WriteLine("girdi");
-                MessageBox.Show("Giriş Başarılı Hoş Geldiniz");
+               
+               MessageBox.Show("Giriş Başarılı Hoş Geldiniz");
+
+                this.Hide();
+                dytsyn_first_page f3 = new dytsyn_first_page();
+
+                f3.FormClosing += F2_FormClosing;
+                f3.ShowDialog();
 
             }
             else
@@ -78,6 +91,16 @@ namespace hediyet
             }
         }
 
+        private void kyt_button_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            Kayit f4 = new Kayit();
+
+            f4.FormClosing += F2_FormClosing;
+            f4.ShowDialog();
+
+        }
 
         private void kadi_textBox_Click(object sender, EventArgs e)
         {
