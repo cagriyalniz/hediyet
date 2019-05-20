@@ -137,6 +137,7 @@
             this.kadi_textBox.Name = "kadi_textBox";
             this.kadi_textBox.Size = new System.Drawing.Size(100, 20);
             this.kadi_textBox.TabIndex = 10;
+            this.kadi_textBox.TextChanged += new System.EventHandler(this.kadi_textBox_TextChanged);
             // 
             // sifre_textBox
             // 
@@ -144,6 +145,7 @@
             this.sifre_textBox.Name = "sifre_textBox";
             this.sifre_textBox.Size = new System.Drawing.Size(100, 20);
             this.sifre_textBox.TabIndex = 11;
+            this.sifre_textBox.TextChanged += new System.EventHandler(this.sifre_textBox_TextChanged);
             // 
             // Form1
             // 

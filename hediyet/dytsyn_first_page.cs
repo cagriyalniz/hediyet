@@ -39,5 +39,29 @@ namespace hediyet
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            dytoner f1 = new dytoner();
+
+            f1.FormClosing += F1_FormClosing;
+            f1.ShowDialog();
+        }
+
+        private void list_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dbislemleri danisanlisteleme = new dbislemleri();
+                dataGridView1.DataSource = danisanlisteleme.danisan();  
+            }
+            catch (Exception hata)
+            {
+
+                //label_Message.Text = hata.Message;
+            }
+
+        }
     }
 }

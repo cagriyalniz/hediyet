@@ -38,10 +38,10 @@ namespace hediyet
         private void dnsn_button_Click(object sender, EventArgs e)
         {
 
-            dbislemleri Uyegirisi = new dbislemleri();
+            dbislemleri Danisangirisi = new dbislemleri();
             Console.WriteLine("db bağlı");
 
-            bool girisislemi = Uyegirisi.Uyekontrol(kadi_textBox.Text, sifre_textBox.Text);
+            bool girisislemi = Danisangirisi.Danisankontrol(kadi_textBox.Text, sifre_textBox.Text);
 
 
             if (girisislemi == true)
@@ -134,6 +134,16 @@ namespace hediyet
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kadi_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sifre_textBox_TextChanged(object sender, EventArgs e)
         {
 
         }

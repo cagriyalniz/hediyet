@@ -51,6 +51,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,6 +69,12 @@
     </Compile>
     <Compile Include="dnsn_first_page.Designer.cs">
       <DependentUpon>dnsn_first_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dytoner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dytoner.Designer.cs">
+      <DependentUpon>dytoner.cs</DependentUpon>
     </Compile>
     <Compile Include="dytsynlist.cs">
       <SubType>Form</SubType>
@@ -97,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="dnsn_first_page.resx">
       <DependentUpon>dnsn_first_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dytoner.resx">
+      <DependentUpon>dytoner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dytsynlist.resx">
       <DependentUpon>dytsynlist.cs</DependentUpon>
