@@ -13,11 +13,11 @@ namespace hediyet
     public partial class dnsn_first_page : Form
     {
 
-
-        public dnsn_first_page()
+        int kid;
+        public dnsn_first_page(int kid_)
         {
             InitializeComponent();
-
+            kid = kid_;
         }
 
         dytoner oneri = new dytoner();

@@ -88,7 +88,7 @@ namespace hediyet
         {
             Baglan();
 
-            SqlCommand kmt = new SqlCommand("Select * from tb_danisan Where k_adi=@k and sifre=@s", cnn);
+            SqlCommand kmt = new SqlCommand("Select k_adi, id from tb_danisan Where k_adi=@k and sifre=@s", cnn);
 
             kmt.Parameters.AddWithValue("@k", kadi);
             kmt.Parameters.AddWithValue("@s", sifre);
@@ -153,7 +153,7 @@ namespace hediyet
             Baglan();
 
 
-            string kiloekle = "insert into tb_kilo(adi, soyadi, guncel_kilo) values (@adtextBox1, @soyadtextBox1, @kilo_textBox)"; //tabloya ad ve soyadını nereden çekeceğiz
+            string kiloekle = "insert into tb_kilo(k_id, guncel_kilo) values (@adtextBox1, @soyadtextBox1, @kilo_textBox)"; //tabloya ad ve soyadını nereden çekeceğiz
 
 
 

@@ -49,7 +49,7 @@ namespace hediyet
                 MessageBox.Show("Giriş Başarılı Hoş Geldiniz");
 
                 this.Hide();
-                dnsn_first_page f4 = new dnsn_first_page();
+                dnsn_first_page f4 = new dnsn_first_page(2);
 
                 f4.FormClosing += F2_FormClosing;
                 f4.ShowDialog();
